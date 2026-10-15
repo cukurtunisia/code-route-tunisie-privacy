@@ -31,6 +31,10 @@ hr{border:none;border-top:1px solid #e3e9f0;margin:34px 0 26px;}
 .en th,.en td{text-align:left;}
 .en .box{border-right:none;border-left:4px solid #e8a020;}
 .en .good{border-left-color:#2e9e63;}
+a.del-btn{display:inline-block;background:#d94a5a;color:#fff;text-decoration:none;font-weight:800;
+  padding:10px 16px;border-radius:10px;margin:2px 0 4px;}
+.box p{margin-bottom:8px;}
+.box p:last-child{margin-bottom:0;}
 footer{text-align:center;font-size:12px;color:#8b98a3;margin-top:26px;}
 </style>
 </head>
@@ -39,7 +43,7 @@ footer{text-align:center;font-size:12px;color:#8b98a3;margin-top:26px;}
 
   <h1>سياسة الخصوصية</h1>
   <div class="sub">تطبيق <strong>كود الطرقات تونس</strong> — ÇÜKÜR TÜNİSİE</div>
-  <div class="upd">آخر تحديث: 13 أكتوبر 2026</div>
+  <div class="upd">آخر تحديث: 15 أكتوبر 2026</div>
 
   <p>نحترم خصوصيتك. توضّح هذه السياسة ما نجمعه من بيانات، ولماذا، وكيف نحميه.
   باستخدامك للتطبيق فإنك توافق على ما ورد فيها.</p>
@@ -50,6 +54,25 @@ footer{text-align:center;font-size:12px;color:#8b98a3;margin-top:26px;}
     Firebase. ولا نطلب رقم هاتفك ولا جهات اتصالك ولا إذن الموقع (GPS)، ولا نبيع
     بياناتك لأي جهة. أما الإعلانات فتعرضها <strong>Google AdMob</strong> وتعالج هي
     بعض البيانات بنفسها، كما هو موضّح في القسم ٣.
+  </div>
+
+  <h2 id="account-deletion">🗑️ حذف الحساب</h2>
+  <div class="box warn">
+    <p><strong>من داخل التطبيق:</strong> سجّل الدخول، ثم افتح «حسابي» ← «حذف الحساب نهائيًا»، واكتب
+    كلمة «حذف» للتأكيد، ثم أكّد هويتك (كلمة السر أو نفس حساب Google). يحذف التطبيق حساب تسجيل
+    الدخول (Firebase Authentication) مع بياناته المرتبطة المذكورة أدناه، ولا يُعلن نجاح الحذف إلا بعد اكتماله.</p>
+    <p><strong>إن لم يعد التطبيق لديك:</strong> أرسل طلب الحذف من البريد الإلكتروني المرتبط بحسابك:</p>
+    <p><a class="del-btn" href="mailto:cukurtunisia@gmail.com?subject=Account%20deletion%20request%20-%20Code%20de%20la%20route%20Tunisie%20216&amp;body=Please%20delete%20my%20Code%20de%20la%20route%20Tunisie%20216%20account.%0D%0AAccount%20email%3A%20%0D%0A%0D%0A(Do%20not%20include%20your%20password.)">✉️ إرسال طلب حذف الحساب</a></p>
+    <p>أو راسلنا مباشرة على <strong>cukurtunisia@gmail.com</strong> بعنوان:
+    <em dir="ltr">Account deletion request - Code de la route Tunisie 216</em>.
+    <strong>لا ترسل كلمة السر أو أي رمز دخول أبدًا.</strong></p>
+    <p>هذه الصفحة لا تحذف أي حساب تلقائيًا. يتحقّق المطوّر من أن الطلب صادر عن صاحب الحساب، ثم يحذف
+    يدويًا وبشكل آمن، خلال 30 يومًا من استلام الطلب: حساب تسجيل الدخول في Firebase Authentication،
+    وسجلّ بياناتك (الاسم والصورة الرمزية والنقاط والتقدّم والقلوب ومدّة النسخة المميّزة) وظهورك في لوحة
+    الترتيب، وسجلّ الرموز الترويجية التي فعّلتها، ورسائلك في الدردشة العامة.</p>
+    <p>لا يشمل الحذف: تقدّم وضع الزائر المحفوظ على جهازك (يُمحى بحذف التطبيق)، واقتباسات قصيرة من رسائلك
+    داخل ردود مستخدمين آخرين، والنسخ الاحتياطية أو السجلات التي قد تحتفظ بها Google لفترة محدودة وفق
+    سياساتها، وبيانات الإعلانات التي تعالجها Google مباشرة (القسم ٣).</p>
   </div>
 
   <h2>١. البيانات التي تُحفظ على جهازك</h2>
@@ -147,7 +170,8 @@ footer{text-align:center;font-size:12px;color:#8b98a3;margin-top:26px;}
   <ul>
     <li><strong>حذف بياناتك المحلية:</strong> من داخل التطبيق ← الإعدادات ← إعادة ضبط كل التقدّم.
         أو بحذف التطبيق، فيُمحى كل شيء من جهازك.</li>
-    <li><strong>حذف حسابك السحابي:</strong> راسلنا من البريد الإلكتروني المرتبط بحسابك على العنوان
+    <li><strong>حذف حسابك السحابي:</strong> احذفه بنفسك من داخل التطبيق، أو انظر قسم
+        <a href="#account-deletion">«حذف الحساب»</a> أعلاه. للطلب عبر البريد: راسلنا من البريد الإلكتروني المرتبط بحسابك على العنوان
         أدناه، واذكر أنك تطلب الحذف. يتم الحذف يدويًا من لوحة Firebase، وننفّذه خلال 30 يومًا
         من استلام الطلب. ويشمل: حساب تسجيل الدخول، وسجلّ بياناتك (الاسم والصورة الرمزية
         والنقاط والتقدّم والقلوب ومدّة النسخة المميّزة)، وسجلّ الرموز الترويجية التي فعّلتها،
@@ -179,7 +203,7 @@ footer{text-align:center;font-size:12px;color:#8b98a3;margin-top:26px;}
   <div class="en">
     <h1>Privacy Policy</h1>
     <div class="sub"><strong>Code de la Route Tunisie</strong> — ÇÜKÜR TÜNİSİE</div>
-    <div class="upd">Last updated: 13 October 2026</div>
+    <div class="upd">Last updated: 15 October 2026</div>
 
     <div class="box good">
       <strong>In short:</strong> the app works fully without an account. Your profile,
@@ -188,6 +212,28 @@ footer{text-align:center;font-size:12px;color:#8b98a3;margin-top:26px;}
       contacts or location permission (GPS), and we never sell your data. Ads are served
       by <strong>Google AdMob</strong>, which processes some data itself, as described in
       section 3.
+    </div>
+
+    <h2 id="account-deletion-en">🗑️ Account Deletion</h2>
+    <div class="box warn">
+      <p><strong>In the app:</strong> sign in, open «حسابي» (My account) → «حذف الحساب نهائيًا»
+      (Delete account permanently), type the confirmation word, then confirm your identity (password, or
+      the same Google account). The app deletes your sign-in account (Firebase Authentication) together
+      with the associated data listed below, and reports success only once deletion has completed.</p>
+      <p><strong>If you no longer have the app:</strong> send a deletion request from the email address
+      linked to your account:</p>
+      <p><a class="del-btn" href="mailto:cukurtunisia@gmail.com?subject=Account%20deletion%20request%20-%20Code%20de%20la%20route%20Tunisie%20216&amp;body=Please%20delete%20my%20Code%20de%20la%20route%20Tunisie%20216%20account.%0D%0AAccount%20email%3A%20%0D%0A%0D%0A(Do%20not%20include%20your%20password.)">✉️ Send an account deletion request</a></p>
+      <p>Or email <strong>cukurtunisia@gmail.com</strong> directly with the subject
+      <em>Account deletion request - Code de la route Tunisie 216</em>.
+      <strong>Never send your password or any sign-in code.</strong></p>
+      <p>This page does not delete accounts automatically. The developer verifies that the request comes
+      from the account owner, then deletes manually and securely, within 30 days of receiving the request:
+      your Firebase Authentication sign-in account, your user record (name, avatar, XP, progress, hearts
+      and Premium duration) and your leaderboard entry, your promo-code redemption records, and your
+      public chat messages.</p>
+      <p>Not covered: guest progress stored on your device (removed when you uninstall the app), short
+      quotes of your messages inside other users' replies, backups or logs Google may keep for a limited
+      time under its own policies, and advertising data processed directly by Google (section 3).</p>
     </div>
 
     <h2>1. Data stored on your device</h2>
@@ -281,7 +327,8 @@ footer{text-align:center;font-size:12px;color:#8b98a3;margin-top:26px;}
     <h2>7. Your rights</h2>
     <ul>
       <li><strong>Delete local data:</strong> Settings → Reset all progress, or uninstall the app.</li>
-      <li><strong>Delete your cloud account:</strong> email us from the email address linked to
+      <li><strong>Delete your cloud account:</strong> delete it yourself in the app, or see
+          <a href="#account-deletion-en">Account Deletion</a> above. To request it by email: email us from the email address linked to
           your account and say you want it deleted. Deletion is done manually by us in the
           Firebase console, and we carry it out within 30 days of receiving your request. It covers
           your sign-in account, your Firebase user record (name, avatar, XP, progress, hearts and
