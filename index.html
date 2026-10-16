@@ -69,7 +69,8 @@ footer{text-align:center;font-size:12px;color:#8b98a3;margin-top:26px;}
     <p>هذه الصفحة لا تحذف أي حساب تلقائيًا. يتحقّق المطوّر من أن الطلب صادر عن صاحب الحساب، ثم يحذف
     يدويًا وبشكل آمن، خلال 30 يومًا من استلام الطلب: حساب تسجيل الدخول في Firebase Authentication،
     وسجلّ بياناتك (الاسم والصورة الرمزية والنقاط والتقدّم والقلوب ومدّة النسخة المميّزة) وظهورك في لوحة
-    الترتيب، وسجلّ الرموز الترويجية التي فعّلتها، ورسائلك في الدردشة العامة.</p>
+    الترتيب، ورسائلك في الدردشة العامة.</p>
+    <p><strong>ما يبقى بعد الحذف:</strong> سجلّ مختصر للرموز الترويجية التي فعّلتها — يحتوي فقط على الرمز ومدّته وتاريخ تفعيله، بلا اسم ولا بريد إلكتروني ولا أي محتوى. نحتفظ به لمنع إعادة استعمال الرمز نفسه، ويصبح غير مرتبط بأي حساب بعد حذف حساب الدخول.</p>
     <p>لا يشمل الحذف: تقدّم وضع الزائر المحفوظ على جهازك (يُمحى بحذف التطبيق)، واقتباسات قصيرة من رسائلك
     داخل ردود مستخدمين آخرين، والنسخ الاحتياطية أو السجلات التي قد تحتفظ بها Google لفترة محدودة وفق
     سياساتها، وبيانات الإعلانات التي تعالجها Google مباشرة (القسم ٣).</p>
@@ -105,7 +106,7 @@ footer{text-align:center;font-size:12px;color:#8b98a3;margin-top:26px;}
     <tr><td>الصورة الرمزية المختارة (إيموجي أو صورة جاهزة من التطبيق — وليست صورتك الشخصية)</td><td>عرضها في لوحة الترتيب</td></tr>
     <tr><td>النقاط والمستوى والعملات</td><td>المزامنة بين أجهزتك ولوحة الترتيب</td></tr>
     <tr><td>إحصائيات اختباراتك وتقدّمك (القلوب، المفضّلة، الإنجازات، الإشارات التي شاهدتها)</td><td>استعادة تقدّمك عند تغيير الجهاز</td></tr>
-    <tr><td>الرموز الترويجية التي فعّلتها ومدة النسخة المميّزة</td><td>تفعيل النسخة المميّزة ومنع إعادة استعمال الرمز</td></tr>
+    <tr><td>الرموز الترويجية التي فعّلتها ومدة النسخة المميّزة</td><td>تفعيل النسخة المميّزة ومنع إعادة استعمال الرمز — ويبقى هذا السجلّ المختصر بعد حذف الحساب لنفس الغرض</td></tr>
     <tr><td>الرسائل التي تنشرها في الدردشة العامة (النص واسمك ومعرّف حسابك ووقت الإرسال)</td><td>عرضها لمستخدمي التطبيق المسجّلين الدخول</td></tr>
   </table>
   <p>هذه هي البيانات التي يرسلها التطبيق إلى Firebase عند استخدام الحساب. يمكنك استخدام
@@ -174,8 +175,8 @@ footer{text-align:center;font-size:12px;color:#8b98a3;margin-top:26px;}
         <a href="#account-deletion">«حذف الحساب»</a> أعلاه. للطلب عبر البريد: راسلنا من البريد الإلكتروني المرتبط بحسابك على العنوان
         أدناه، واذكر أنك تطلب الحذف. يتم الحذف يدويًا من لوحة Firebase، وننفّذه خلال 30 يومًا
         من استلام الطلب. ويشمل: حساب تسجيل الدخول، وسجلّ بياناتك (الاسم والصورة الرمزية
-        والنقاط والتقدّم والقلوب ومدّة النسخة المميّزة)، وسجلّ الرموز الترويجية التي فعّلتها،
-        ورسائل الدردشة العامة التي نشرتها. الحذف نهائي ويُزيل تقدّمك وقلوبك ونسختك المميّزة.
+        والنقاط والتقدّم والقلوب ومدّة النسخة المميّزة)، ورسائل الدردشة العامة التي نشرتها.
+        ويبقى سجلّ مختصر للرموز الترويجية (الرمز ومدّته وتاريخه فقط) لمنع إعادة استعمال الرمز. الحذف نهائي ويُزيل تقدّمك وقلوبك ونسختك المميّزة.
         وقد يبقى اقتباس قصير من رسالتك داخل ردود مستخدمين آخرين، وقد تحتفظ Google بنسخ احتياطية
         أو سجلات لفترة محدودة وفق سياساتها. ولا يشمل هذا بيانات الإعلانات التي تعالجها Google
         مباشرة (القسم ٣)، ويمكنك إدارتها من إعدادات جهازك.</li>
@@ -229,8 +230,10 @@ footer{text-align:center;font-size:12px;color:#8b98a3;margin-top:26px;}
       <p>This page does not delete accounts automatically. The developer verifies that the request comes
       from the account owner, then deletes manually and securely, within 30 days of receiving the request:
       your Firebase Authentication sign-in account, your user record (name, avatar, XP, progress, hearts
-      and Premium duration) and your leaderboard entry, your promo-code redemption records, and your
-      public chat messages.</p>
+      and Premium duration) and your leaderboard entry, and your public chat messages.</p>
+      <p><strong>What is kept after deletion:</strong> a minimal promo-code redemption record — the code, its
+      duration and the date it was activated, with no name, email or content. We keep it to stop the same
+      code being reused, and it is no longer linked to any account once the sign-in account is deleted.</p>
       <p>Not covered: guest progress stored on your device (removed when you uninstall the app), short
       quotes of your messages inside other users' replies, backups or logs Google may keep for a limited
       time under its own policies, and advertising data processed directly by Google (section 3).</p>
@@ -261,7 +264,7 @@ footer{text-align:center;font-size:12px;color:#8b98a3;margin-top:26px;}
       <li>Your email address (or your Google account, if you sign in with Google)</li>
       <li>Your display name and chosen avatar (an emoji or a preset image from the app — not your own photo)</li>
       <li>XP, level, coins, and quiz progress (hearts, favourites, achievements, signs you have viewed, quiz statistics)</li>
-      <li>Promo codes you redeemed and your Premium duration</li>
+      <li>Promo codes you redeemed and your Premium duration (the minimal redemption record is kept after account deletion to prevent code reuse)</li>
       <li>Messages you post in the public chat (text, your name, your account ID and the time sent), visible to other signed-in users</li>
     </ul>
     <p>This enables cross-device sync, the leaderboard, and chat. This is the data the app sends
@@ -332,8 +335,8 @@ footer{text-align:center;font-size:12px;color:#8b98a3;margin-top:26px;}
           your account and say you want it deleted. Deletion is done manually by us in the
           Firebase console, and we carry it out within 30 days of receiving your request. It covers
           your sign-in account, your Firebase user record (name, avatar, XP, progress, hearts and
-          Premium duration), the promo-code redemption records, and the public chat messages you
-          posted. Deletion is permanent and removes your progress, hearts and Premium status. A
+          Premium duration) and the public chat messages you posted. A minimal promo-code redemption
+          record (code, duration and date only) is kept to prevent code reuse. Deletion is permanent and removes your progress, hearts and Premium status. A
           short quote of your message may remain inside other users' replies, and Google may keep
           backup copies or logs for a limited time under its own policies. This does not cover
           advertising data that Google processes directly (section 3), which you can manage in
